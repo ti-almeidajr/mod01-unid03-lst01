@@ -6,7 +6,12 @@
     <title>Unid03 - Lista01 - Questão01</title>
     <script type="text/javascript">          
         {  
+            let notas = [];
 
+            for (let cont = 0; cont < 3; cont++) {
+                notas[cont] = parseFloat(prompt("Digite a " + cont + "Nota"))
+            }
+            document.write(notas)
         }
     </script> 
 </head>
