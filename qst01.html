@@ -7,11 +7,19 @@
     <script type="text/javascript">          
         {  
             let notas = [];
+            let notasMaiores = [];
 
-            for (let cont = 1; cont < 3; cont++) {
-                notas[cont] = parseFloat(prompt("Digite a " + cont + " ª Nota"))
+            for (let cont = 0; cont < 3; cont++) {
+                notas[cont] = parseFloat(prompt("Digite a " + cont + " ª Nota"))  
             }
-            document.write(notas)
+
+            for (let i = 0; i < 3; i++) {
+                if (notas[cont] < 5) {
+                    notasMaiores[i] = notas[cont]
+                    i++
+                } 
+            }
+            document.write(notasMaiores)
         }
     </script> 
 </head>
