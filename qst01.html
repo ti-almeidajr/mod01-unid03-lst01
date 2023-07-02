@@ -13,14 +13,14 @@
                 notas[cont] = parseFloat(prompt("Digite a " + cont + " ª Nota"))  
             }
 
-            for (let i = 0; i < 3; i++) {
+            /*for (let i = 0; i < 3; i++) {
                 if (notas[cont] < 5) {
                     notasMaiores[i] = notas[cont]
                     i++
                 } 
             
-            }
-        document.write("results").innerHTML = + notasMaiores        
+             }*/
+        document.getElementById("results").innerHTML = + notas + "<br>"        
     }
     </script> 
 </head>
