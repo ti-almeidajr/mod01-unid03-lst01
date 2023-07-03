@@ -6,18 +6,14 @@
     <title>Unid03 - Lista01 - Questão01</title>
     <script type="text/javascript">          
         {  
-            let notas = [2];
-            let notasMaiores = [2];
+            let notas = [];
+            let notasMaiores = [];
 
-            for (let i = 0; i < 3; i++) {
+            for (let i = 0; i < 3; i++) 
+                {
                     notas[i] = parseFloat(prompt("Digite a " + i + " ª Nota")) 
-                    for (let j = 0; j < 3; j++) {    
-                            if (notas[i] > 5) {
-                                    notasMaiores[j] = notas[i]
-                            } 
-                    }
-            }
-            document.write(notasMaiores)
+                }
+            document.write(notas)
         }
     </script> 
 
