@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unid03 - Lista01 - Questão04</title>
+    <script type="text/javascript">          
+        {  
+            let notas = [];
+            let notasMaiores = [];
+            let j = 0;
+
+            for (let c = 0; c < 10; c++) 
+                {
+                    notas[c] = parseFloat(prompt("Digite a " + c + " ª Nota")) 
+                }
+
+            for (let i = 0; i < 10; i++) 
+                {
+                    if (notas[i] > 5) 
+                        {
+                            notasMaiores[j] = notas[i]
+                            j++
+                        }
+               
+                }
+            document.write("Notas maiores que 5 são: " + notasMaiores.join(" , "))
+        }
+    </script> 
+
+</head>
+<body>
+</body>
+</html>
