@@ -8,12 +8,24 @@
         {  
             let notas = [];
             let notasMaiores = [];
+            let j = 0;
+
+            for (let c = 0; c < 3; c++) 
+                {
+                    notas[c] = parseFloat(prompt("Digite a " + c + " ª Nota")) 
+                }
 
             for (let i = 0; i < 3; i++) 
                 {
-                    notas[i] = parseFloat(prompt("Digite a " + i + " ª Nota")) 
+                    if (notas[i] > 5) 
+                        {
+                            notasMaiores[j] = notas[i]
+                            j++
+                        }
+               
+                
                 }
-            document.write(notas)
+            document.write(notasMaiores)
         }
     </script> 
 
