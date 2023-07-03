@@ -10,12 +10,12 @@
             let notasMaiores = [];
             let j = 0;
 
-            for (let c = 0; c < 3; c++) 
+            for (let c = 0; c < 10; c++) 
                 {
                     notas[c] = parseFloat(prompt("Digite a " + c + " ª Nota")) 
                 }
 
-            for (let i = 0; i < 3; i++) 
+            for (let i = 0; i < 10; i++) 
                 {
                     if (notas[i] > 5) 
                         {
@@ -24,13 +24,11 @@
                         }
                
                 }
-                document.getElementById("resultado").innerHTML = "Notas maiores que 5  : "+ media +"<br>"
-            //document.write(notasMaiores)
+            document.write("Notas maiores que 5 são: " + notasMaiores.join(" , "))
         }
     </script> 
 
 </head>
 <body>
-    <p id="resultado"></p>
 </body>
 </html>
