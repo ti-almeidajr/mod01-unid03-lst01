@@ -6,18 +6,21 @@
     <title>Unid03 - Lista01 - Questão03</title>
     <script type="text/javascript">          
         {  
-            let aluno = [];
+            let alunos = [];
             let notas = [];
 
-            for (let a = 0; a < 2; a++) 
+            for (let a = 1; a < 2; a++) 
                 {
-                    aluno[a] = prompt("Digite o nome do aluno")
-                    for (let n = 0; n < 2; n++) 
+                    alunos[a] = prompt("Informe o nome do(a) " + a + " aluno(a)")
+                    for (let n = 1; n < 3; n++) 
                         {
-                            notas[n] = prompt("Digite a " + c + " ª Nota")
+                            notas[n] = parseFloat(prompt("Informe a " + n + "ª nota do(a) aluno(a)" + alunos))
+                           
+
                         }
+                    document.write("O(A) aluno(a) " + alunos[a] + " , tirou as seguintes notas: " + notas.join(" , ") + "<br>")
                 }
-            document.write("O aluno" + aluno + "tirou as notas" + notas)
+            
         }
     </script> 
 
