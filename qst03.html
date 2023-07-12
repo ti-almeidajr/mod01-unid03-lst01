@@ -11,29 +11,29 @@
             let soma = 0;
             let media;
            
-            for (let a = 1; a < 3; a++)
+            for (let aln = 1; aln < 2; aln++)
                 {
-                    alunos[a] = prompt("Nome do aluno")
+                    alunos[aln] = prompt("Nome do(a) Aluno(a) " + aln)
                     for (let n = 1; n < 3; n++) 
                         {
-                            notas[n] = parseFloat(prompt("Nota " + n + "<br>"))
+                            notas[n] = parseFloat(prompt( n + "ª Nota"))
                         }    
                 }  
             
             for (let i = 1; i < 3; i++) 
                 {
                     soma = (soma + notas[i])
+               
                 }
-           
             media = soma / 2
-            document.write("Aluno: " + alunos.join("") + "<br>")
+            
             for (let r = 1; r < 3; r++) 
                 {
-                    document.write("Nota: " + r + ": " + notas + "<br>")
+                    document.write("Aluno(a)" + alunos + " Notas: " + notas[r] + "<br>")
+               
                 }
-            
             document.write("<br>")
-            document.write("Média do aluno: " + media)
+            document.write("Média do Aluno : " + media)
         }
     </script> 
 
