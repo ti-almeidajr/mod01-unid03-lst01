@@ -13,10 +13,11 @@
            
             for (let a = 1; a < 2; a++)
                 {
-                    alunos[a] = prompt("Nome do " + a + " aluno")
+                    alunos[a] = prompt("Nome do aluno")
                     for (let n = 1; n < 3; n++) 
                         {
-                            notas[n] = parseFloat(prompt("Informe a " + n + "ª nota do(a) aluno(a)" + alunos))
+                            notas[n] = parseFloat(prompt("Nota " + n))
+                            //notas[n] = parseFloat(prompt("Informe a " + n + "ª nota do(a) aluno(a)" + alunos))
                         }    
                 }  
             
@@ -29,7 +30,7 @@
             
             for (let r = 1; r < 3; r++) 
                 {
-                    document.write("Aluno(a) Nota: " + notas[r]+ "<br>")
+                    document.write("Aluno(a)" + alunos + " Notas: " + notas[r] + "<br>")
                
                 }
             document.write("<br>")
