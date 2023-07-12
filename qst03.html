@@ -26,12 +26,15 @@
                
                 }
             media = soma / 2
-            
-            for (let r = 1; r < 3; r++) 
+
+            for (let la = 1; la < 2; la++)
                 {
-                    document.write("Aluno(a)" + alunos + " Notas: " + notas[r] + "<br>")
-               
-                }
+                    document.write("Aluno: " + alunos + "<br>")
+                    for (let ln = 1; ln < 3; ln++) 
+                        {
+                            document.write("Nota: " +ln+ "=" + notas[ln] + "<br>")
+                        }    
+                }  
             document.write("<br>")
             document.write("Média do Aluno : " + media)
         }
