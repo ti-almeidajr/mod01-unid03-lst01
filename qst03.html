@@ -11,12 +11,12 @@
             let soma = 0;
             let media;
            
-            for (let aln = 1; aln < 2; aln++)
+            for (let aln = 1; aln < 3; aln++)
                 {
                     alunos[aln] = prompt("Nome do(a) Aluno(a) " + aln)
-                    for (let n = 1; n < 3; n++) 
+                    for (let nts = 1; nts < 3; nts++) 
                         {
-                            notas[n] = parseFloat(prompt( n + "ª Nota"))
+                            notas[nts] = parseFloat(prompt( nts + "ª Nota"))
                         }    
                 }  
             
@@ -26,13 +26,14 @@
                
                 }
             media = soma / 2
-
-            for (let la = 1; la < 2; la++)
+           
+            //Listar
+            for (let aln = 1; aln < 3; aln++)
                 {
-                    document.write("Aluno: " + alunos.join("") + "<br>")
-                    for (let ln = 1; ln < 3; ln++) 
+                    document.write("Aluno: " + alunos[aln] + "<br>")
+                    for (let nts = 1; nts < 3; nts++) 
                         {
-                            document.write("Nota " + ln + ": " + notas[ln] + "<br>")
+                            document.write("Nota " + nts + ": " + notas[nts] + "<br>")
                         }    
                 }  
             document.write("<br>")
