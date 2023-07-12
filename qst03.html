@@ -11,12 +11,12 @@
             let soma = 0;
             let media;
            
-            for (let a = 1; a < 2; a++)
+            for (let a = 1; a < 3; a++)
                 {
                     alunos[a] = prompt("Nome do aluno")
                     for (let n = 1; n < 3; n++) 
                         {
-                            notas[n] = parseFloat(prompt("Nota " + n))
+                            notas[n] = parseFloat(prompt("Nota " + n + "<br>"))
                         }    
                 }  
             
@@ -29,7 +29,7 @@
             document.write("Aluno: " + alunos.join("") + "<br>")
             for (let r = 1; r < 3; r++) 
                 {
-                    document.write("Nota: " + r + ": " + notas[r] + "<br>")
+                    document.write("Nota: " + r + ": " + notas + "<br>")
                 }
             
             document.write("<br>")
