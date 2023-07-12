@@ -15,19 +15,20 @@
                     notas[c] = parseFloat(prompt("Digite a " + c + " ª Nota")) 
                 }
 
-            for (let i = 1; i < 5; i++) 
+            for (let i = 1; i < 81; i++) 
                 {
                     soma = (soma + notas[i])
                
                 }
-            media = soma / 4
+            media = soma / 80
             
-            for (let a = 1; a < 5; a++) 
+            for (let a = 1; a < 81; a++) 
                 {
                     document.write("Aluno(a) " + a + ", Nota: " + notas[a]+ "<br>")
                
                 }
-           document.write("A média da turma é : " + media)
+            document.write("<br>")
+            document.write("A média da turma é : " + media)
         }
     </script> 
 
