@@ -8,18 +8,32 @@
         {  
             let alunos = [];
             let notas = [];
-
-            for (let a = 1; a < 2; a++) 
+            let soma = 0;
+            let media;
+           
+            for (let a = 1; a < 2; a++)
                 {
-                    alunos[a] = prompt("Informe o nome do(a) " + a + " aluno(a)")
+                    alunos[a] = prompt("Nome do " + a + " aluno")
                     for (let n = 1; n < 3; n++) 
                         {
                             notas[n] = parseFloat(prompt("Informe a " + n + "ª nota do(a) aluno(a)" + alunos))
-                           
-
-                        }      
+                        }    
+                }  
+            
+            for (let i = 1; i < 3; i++) 
+                {
+                    soma = (soma + notas[i])
+               
                 }
-            document.write(alunos + " tirou as seguintes notas: " + notas.join("  ") + "<br>")
+            media = soma / 2
+            
+            for (let r = 1; r < 3; r++) 
+                {
+                    document.write("Aluno(a) Nota: " + notas[r]+ "<br>")
+               
+                }
+            document.write("<br>")
+            document.write("A média da turma é : " + media)
         }
     </script> 
 
