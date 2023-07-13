@@ -20,13 +20,13 @@
                         }    
                 }  
             
+            //Soma e Média
             for (let i = 1; i < 3; i++) 
                 {
                     soma = (soma + notas[i])
-               
+                    media = soma / 2
                 }
-            media = soma / 2
-           
+              
             //Listar
             for (let aln = 1; aln < 3; aln++)
                 {
@@ -34,10 +34,11 @@
                     for (let nts = 1; nts < 3; nts++) 
                         {
                             document.write("Nota " + nts + ": " + notas[nts] + "<br>")
-                        }    
-                }  
-            document.write("<br>")
-            document.write("Média do Aluno : " + media)
+                        }     
+                    document.write("<br>")
+                    document.write("Média do Aluno : " + media + "<br>")
+                    document.write("<br>")
+                }
         }
     </script> 
 
