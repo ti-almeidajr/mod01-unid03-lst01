@@ -11,27 +11,28 @@
             let soma = 0;
             let media;
            
-            for (let aln = 1; aln < 3; aln++)
+            // Entrada de dados
+            for (let aln = 0; aln < 2; aln++)
                 {
                     alunos[aln] = prompt("Nome do(a) Aluno(a) " + aln)
-                    for (let nts = 1; nts < 3; nts++) 
+                    for (let nts = 0; nts < 2; nts++) 
                         {
                             notas[nts] = parseFloat(prompt( nts + "ª Nota"))
                         }    
                 }  
             
             //Soma e Média
-            for (let i = 1; i < 3; i++) 
+            for (let i = 0; i < 2; i++) 
                 {
                     soma = (soma + notas[i])
                     media = soma / 2
                 }
               
             //Listar
-            for (let aln = 1; aln < 3; aln++)
+            for (let aln = 0; aln < 2; aln++)
                 {
                     document.write("Aluno: " + alunos[aln] + "<br>")
-                    for (let nts = 1; nts < 3; nts++) 
+                    for (let nts = 0; nts < 2; nts++) 
                         {
                             document.write("Nota " + nts + ": " + notas[nts] + "<br>")
                         }     
